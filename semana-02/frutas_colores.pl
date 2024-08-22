@@ -24,10 +24,10 @@ esRoja(X) :- esColor(X, rojo).
 % Regla para saber si una fruta es amarilla
 esAmarilla(X) :- esColor(X, amarillo).
 
-% Regla para saber si una fruta es cítrica (ácida y de color amarillo o
+% Regla para saber si una fruta es cÃ­trica (Ã¡cida y de color amarillo o
 % naranja)
 esCitrica(X) :- esAcida(X), (esColor(X,amarillo); esColor(X,naranja)).
 
-%Regla para saber si una fruta es dulce y roja
+% Regla para saber si una fruta es dulce y roja
 esDulceYRoja(X) :- esDulce(X), esColor(X, rojo).
 
